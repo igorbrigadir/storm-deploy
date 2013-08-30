@@ -26,6 +26,12 @@ zookeeper.image: "eu-west-1/ami-a16665d5"         #64-bit ubuntu
 zookeeper.hardware: "m1.large"
 ```
 
+## Launching Storm 0.9.0 Cluster 
+lein deploy-storm --start --name mycluster --release 0.9.0
+
+## Stopping Cluster
+lein deploy-storm --stop --name mycluster
+
 ## Acknowledgements
 
 YourKit is kindly supporting open source projects with its full-featured Java Profiler. YourKit, LLC is the creator of innovative and intelligent tools for profiling Java and .NET applications. Take a look at YourKit's leading software products: [YourKit Java Profiler](http://www.yourkit.com/java/profiler/index.jsp) and [YourKit .NET Profiler](http://www.yourkit.com/.net/profiler/index.jsp).

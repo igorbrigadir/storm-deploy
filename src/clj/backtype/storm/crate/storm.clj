@@ -55,7 +55,7 @@
    ))
 
 (defn get-release [request release]
-  (let [url "git://github.com/nathanmarz/storm.git"
+  (let [url "git://github.com/lorcan/storm.git"
        rl (if (empty? release) "" release)] ; empty string for pallet
 
     (-> request
@@ -91,6 +91,7 @@
      (ln "-s $HOME/`ls | grep zip | sed s/.zip//` storm")
 
      (mkdir -p "daemon")
+     (mkdir -p "$HOME/storm/log4j")
      (chmod "755" "$HOME/storm/log4j")
      (touch "$HOME/storm/log4j/storm.log.properties")
      (touch "$HOME/storm/log4j/log4j.properties")

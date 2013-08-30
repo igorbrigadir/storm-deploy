@@ -3,8 +3,8 @@
    [pallet.resource.remote-file :as remote-file]
    [pallet.action.exec-script :as exec-script]))
 
-;; this is 1.5.2. freezing version to ensure deploy is stable
-(def download-url "https://raw.github.com/technomancy/leiningen/a1fa43400295d57a9acfed10735c1235904a9407/bin/lein")
+;; using a stable version (v2) - not frozen. 
+(def download-url "https://raw.github.com/technomancy/leiningen/stable/bin/lein")
 
 (defn install [request]
   (-> request
